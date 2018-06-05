@@ -1,7 +1,13 @@
-const Botgram = require('botgram');
+const TelegramBot = require('node-telegram-bot-api');
+const { TELEGRAM_BOT_TOKEN } = process.env;
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 const figlet = require('figlet');
 
-const { TELEGRAM_BOT_TOKEN } = process.env;
+
+
+
+
+
 
 
 
@@ -16,7 +22,7 @@ if (!TELEGRAM_BOT_TOKEN) {
   process.exit(1);
 }
 
-const bot = new Botgram(TELEGRAM_BOT_TOKEN, {webHook: {port: port, host: host}});
+
 
 function onMessage(msg, reply) {
   figlet(msg.text, (err, data) => {
