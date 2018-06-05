@@ -1,14 +1,17 @@
 {
   "name": "elnortebot",
-  "description": "testing",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.30.0",
-    "botgram": "2.1.0",
-    "figlet": "1.2.0"
+    "express": "^4.16.1",
+    "node-telegram-bot-api": "^0.28.0",
+    "start": "^5.1.0"
   }
 }
