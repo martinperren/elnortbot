@@ -9,8 +9,6 @@ const figlet = require('figlet');
     
 
     var hour = date.getHours();
-    hour = parseInt(hour);
-    hour = hour +3;
     hour = (hour < 10 ? "0" : "") + hour;
 
     
