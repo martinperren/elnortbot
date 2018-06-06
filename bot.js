@@ -14,7 +14,7 @@ if (!TELEGRAM_BOT_TOKEN) {
 
  bot.on('message', (msg) => {
  var Hola = "hola";
- if (msg.text.toString().toLowerCase().indexOf(hola) === 0) {
+ if (msg.text.toString().toLowerCase().indexOf(Hola) === 0) {
      bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name);
  }
  });
