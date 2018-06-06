@@ -6,8 +6,9 @@ const figlet = require('figlet');
 function getDateTime() {
 
     var date = new Date();
+    date.setTimezone("America/Argentina/San_Juan");
 
-    var hour = date.getHours()-3;
+    var hour = date.getHours();
     hour = (hour < 10 ? "0" : "") + hour;
 
     var min  = date.getMinutes();
