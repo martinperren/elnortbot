@@ -9,8 +9,13 @@ const figlet = require('figlet');
     
  var hour = date.getHours();
    hour = parseInt(hour);
-     hour = hour +3;	  
+     hour = hour -3;	  
      hour = (hour < 10 ? "0" : "") + hour;
+var min  = date.getMinutes();
+   min = (min < 10 ? "0" : "") + min;
+
+var time = hour + ":" + min;
+
 
     
 
@@ -34,7 +39,7 @@ if (!TELEGRAM_BOT_TOKEN) {
 
  bot.on('message', (msg) => {
  if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
-     bot.sendMessage(msg.chat.id, "Hora actual: " +hour);
+     bot.sendMessage(msg.chat.id, "Hora actual: " +time);
  }
  });
 
