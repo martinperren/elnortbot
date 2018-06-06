@@ -39,5 +39,10 @@ if (!TELEGRAM_BOT_TOKEN) {
  });
 
 
+var http = require("http");
+setInterval(function() {
+    http.get("http://elnortebot.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
+
 
 
