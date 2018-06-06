@@ -3,6 +3,9 @@ const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 const figlet = require('figlet');
 
+var date = new Date();
+var current_hour = date.getHours();
+
 
 
 if (!TELEGRAM_BOT_TOKEN) {
@@ -13,11 +16,18 @@ if (!TELEGRAM_BOT_TOKEN) {
 
 
  bot.on('message', (msg) => {
- var Hola = "hola";
- if (msg.text.toString().toLowerCase().indexOf(Hola) === 0) {
+
+ if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
      bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name);
  }
  });
+
+ bot.on('message', (msg) => {
+ if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
+     bot.sendMessage(msg.chat.id, "Hora actual: " + current_hour);
+ }
+ });
+
 
 
 
