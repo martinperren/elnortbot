@@ -3,31 +3,18 @@ const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 const figlet = require('figlet');
 
-function getDateTime() {
+
 
     var date = new Date();
-    date.setTimezone("America/Argentina/San_Juan");
+    
 
-    var hour = date.getHours();
+    int hour = date.getHours();
+    hour = hour +3;
     hour = (hour < 10 ? "0" : "") + hour;
 
-    var min  = date.getMinutes();
-    min = (min < 10 ? "0" : "") + min;
+    
 
-    var sec  = date.getSeconds();
-    sec = (sec < 10 ? "0" : "") + sec;
 
-    var year = date.getFullYear();
-
-    var month = date.getMonth() + 1;
-    month = (month < 10 ? "0" : "") + month;
-
-    var day  = date.getDate();
-    day = (day < 10 ? "0" : "") + day;
-
-    return year + ":" + month + ":" + day + ":" + hour + ":" + min + ":" + sec;
-
-}
 
 
 
@@ -47,7 +34,7 @@ if (!TELEGRAM_BOT_TOKEN) {
 
  bot.on('message', (msg) => {
  if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
-     bot.sendMessage(msg.chat.id, "Hora actual: " +getDateTime());
+     bot.sendMessage(msg.chat.id, "Hora actual: " +hour());
  }
  });
 
