@@ -33,9 +33,17 @@ if (!TELEGRAM_BOT_TOKEN) {
  bot.on('message', (msg) => {
 
  if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
-     bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name);
+     bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
  }
  });
+
+ bot.on('message', (msg) => {
+
+ if (msg.text.toString().toLowerCase().indexOf("chau") === 0) {
+     bot.sendMessage(msg.chat.id, "Nos re vimos!");
+ }
+ });
+
 
  bot.on('message', (msg) => {
  if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
