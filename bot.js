@@ -27,10 +27,11 @@ return hour + ":" + min;
 function horarios(){
     var proximos = [];
     var i;
-for (i = 0; i < lunvierdesfe.length; i++) {
+    tam = lunvierdesfe.length;
+for (i = 0; i < tam; i++) {
     if(lunvierdesfe[i]<hora()){
         proximos.push(lunvierdesfe[i]);   
-       return lunvierdesfe[i]; 
+       return proximos; 
     }
 }
     
