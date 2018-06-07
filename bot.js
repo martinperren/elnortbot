@@ -26,7 +26,7 @@ return hour + ":" + min;
 
 function horarios(){
     var proximos = new Array();
-for (i = 0; i < fLen; i++) {
+for (i = 0; i < lunvierdesfe; i++) {
     if(lunvierdesfe[i]<hora()){
         proximos.push(lunvierdesfe[i]);   
         
