@@ -29,12 +29,12 @@ function horarios(){
     var i;
     tam = lunvierdesfe.length;
 for (i = 0; i < tam; i++) {
-    if(lunvierdesfe[i]<hora()){
+    if(lunvierdesfe[i]>hora()){
         proximos.push(lunvierdesfe[i]);   
-       return lunvierdesfe[i]<hora(); 
+       
     }
 }
-    
+    return proximos; 
    
 }
 
