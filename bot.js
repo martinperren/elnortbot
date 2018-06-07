@@ -5,7 +5,7 @@ const figlet = require('figlet');
 
 
 
-var lunvierdesfe = ["0:00", "6:45","10:10","12:00", "13:00", "14:00", "15:50", "18:00", "19:15", "21:05", "22:30"];
+var lunvierdesfe = ["0:00","6:45","10:10","12:00","13:00", "14:00","15:50","18:00","19:15","21:05","22:30"];
 
 
 
@@ -26,6 +26,7 @@ return hour + ":" + min;
 
 function horarios(){
     var proximos = [];
+    var i;
 for (i = 0; i < lunvierdesfe.length; i++) {
     if(lunvierdesfe[i]<hora()){
         proximos.push(lunvierdesfe[i]);   
