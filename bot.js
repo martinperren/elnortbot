@@ -4,6 +4,11 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 const figlet = require('figlet');
 
 
+
+var lunvierdesfe = ["0:00", "6:45","10:10","12:00", "13:00", "14:00", "15:50", "18:00", "19:15", "21:05", "22:30"];
+
+
+
 function hora(){
     var date = new Date();
     
@@ -17,7 +22,19 @@ var min  = date.getMinutes();
 return hour + ":" + min;
 
 }
+
+
+function horarios(){
+    var proximos = new Array();
+for (i = 0; i < fLen; i++) {
+    if(lunvierdesfe[i]<hora()){
+        proximos.push(lunvierdesfe[i]);   
+        
+    }
+}
     
+   return proximos;
+}
 
 
 
@@ -50,6 +67,15 @@ if (!TELEGRAM_BOT_TOKEN) {
      bot.sendMessage(msg.chat.id, "Hora actual: " +hora());
  }
  });
+
+
+bot.on('message', (msg) => {
+
+ if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
+     bot.sendMessage(msg.chat.id, "Proximas salidas: " + horarios());
+ }
+ });
+
 
 
 var http = require("http");
