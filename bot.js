@@ -31,7 +31,7 @@ function horarios(){
 for (i = 0; i < tam; i++) {
     if(lunvierdesfe[i]<hora()){
         proximos.push(lunvierdesfe[i]);   
-       return proximos; 
+       return lunvierdesfe[i]<hora(); 
     }
 }
     
