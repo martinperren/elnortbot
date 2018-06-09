@@ -21,7 +21,8 @@ return day;
 function horariosDeSfe(){
     var horarios = [];
     var resultado = [];
-    dia = parseInt(dia());
+    //dia = parseInt(dia());
+    dia = 6;
     
     switch(dia) {
            case 1: //lunes
@@ -57,7 +58,7 @@ function horariosDeSfe(){
      
 }
         
-    return "ATR"; 
+    return 0; 
    
 }
 function horariosDeSfeAux(array){
@@ -74,10 +75,9 @@ for (i = 0; i < tam; i++) {
     return proximos; 
    
 }
-if (!TELEGRAM_BOT_TOKEN) {
-  console.error('Seems like you forgot to pass Telegram Bot Token. I can not proceed...');
-  process.exit(1);
-}
+
+
+
 bot.on('message', (msg) => {
  
     
@@ -101,7 +101,9 @@ bot.on('message', (msg) => {
      bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSfe());
  }
  });
+
+
 var http = require("http");
 setInterval(function() {
     http.get("http://elnortebot.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
+}, 1800000); //30 minutos
