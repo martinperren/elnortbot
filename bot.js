@@ -26,8 +26,8 @@ return hour + ":" + min;
 
 function dia(){
     var date = new Date();
-     var dia = date.getDay()
-return dia;
+     var day = date.getDay()
+return day;
 
 }
 
