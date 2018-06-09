@@ -18,13 +18,15 @@ function dia(){
      var day = date.getDay()
 return day;
 }
+
+
 function horariosDeSfe(){
     var horarios = [];
     var resultado = [];
-    var dia = parseInt(dia());
+   
     
     
-    switch(dia) {
+    switch(parseInt(dia())) {
            case 1: //lunes
         horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
             return horariosDeSfeAux(horarios);
