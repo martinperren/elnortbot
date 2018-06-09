@@ -26,38 +26,38 @@ function horariosDeSfe(){
     switch(dia) {
            case 1: //lunes
         horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
-            resultado = horariosDeSfeAux(horarios);
+            return horariosDeSfeAux(horarios);
         break;
             case 2: //martes
         horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
-             resultado = horariosDeSfeAux(horarios);
+             return horariosDeSfeAux(horarios);
         break;
             case 3: //miercoles
         horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
-             resultado = horariosDeSfeAux(horarios);
+             return horariosDeSfeAux(horarios);
         break;
             case 4: //jueves
        horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
-             resultado = horariosDeSfeAux(horarios);
+             return horariosDeSfeAux(horarios);
         break;
             case 5: //viernes
        horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
-             resultado = horariosDeSfeAux(horarios);
+             return horariosDeSfeAux(horarios);
         break;
             case 6: //sabado
         horarios  = ["05:30","10:10","12:00","14:00","18:00","19:15","22:30"];
-            resultado = horariosDeSfeAux(horarios);
+            return horariosDeSfeAux(horarios);
         break;
             case 7: //domingo
         horarios  = ["08:30","10:10","13:30","17:15","20:30","22:30","23:45"];
-             resultado = horariosDeSfeAux(horarios);
+             return horariosDeSfeAux(horarios);
         break;
             
             
      
 }
         
-    return resultado; 
+    return "ATR"; 
    
 }
 function horariosDeSfeAux(array){
