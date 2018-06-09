@@ -34,36 +34,37 @@ return dia;
 
 function horariosDeSfe(){
     var horarios = [];
-  var dia = dia();
     var resultado = [];
+    var dia = dia();
+    
     
     switch(dia) {
            case 1: //lunes
-        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+        horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
             resultado = horariosDeSfeAux(horarios);
         break;
             case 2: //martes
-        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+        horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
              resultado = horariosDeSfeAux(horarios);
         break;
             case 3: //miercoles
-        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+        horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
              resultado = horariosDeSfeAux(horarios);
         break;
             case 4: //jueves
-       var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+       horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
              resultado = horariosDeSfeAux(horarios);
         break;
             case 5: //viernes
-        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+       horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
              resultado = horariosDeSfeAux(horarios);
         break;
             case 6: //sabado
-        var  horarios  = ["05:30","10:10","12:00","14:00","18:00","19:15","22:30"];
+        horarios  = ["05:30","10:10","12:00","14:00","18:00","19:15","22:30"];
             resultado = horariosDeSfeAux(horarios);
         break;
             case 7: //domingo
-        var  horarios  = ["08:30","10:10","13:30","17:15","20:30","22:30","23:45"];
+        horarios  = ["08:30","10:10","13:30","17:15","20:30","22:30","23:45"];
              resultado = horariosDeSfeAux(horarios);
         break;
             
@@ -131,6 +132,13 @@ bot.on('message', (msg) => {
 
  if (msg.text.toString().toLowerCase().indexOf("desfe") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSfe());
+ }
+ });
+
+bot.on('message', (msg) => {
+
+ if (msg.text.toString().toLowerCase().indexOf("dia") === 0) {
+     bot.sendMessage(msg.chat.id, "Proximas salidas: " +dia());
  }
  });
 
