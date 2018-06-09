@@ -158,6 +158,7 @@ bot.on('message', (msg) => {
        bot.sendMessage(msg.chat.id, "Hoy es Viernes " + msg.from.first_name+"!");
         break;
             case "6": //sabado
+               bot.sendMessage(msg.chat.id,"xd");
         bot.sendMessage(msg.chat.id, "Hoy es Sábado " + msg.from.first_name+"!");
         break;
             case "7": //domingo
