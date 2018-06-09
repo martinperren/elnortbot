@@ -33,7 +33,7 @@ return dia;
 
 
 function horariosDeSfe(){
-    var proximos = [];
+    var horarios = [];
   var dia = dia();
     
     switch(dia) {
@@ -137,6 +137,3 @@ var http = require("http");
 setInterval(function() {
     http.get("http://elnortebot.herokuapp.com");
 }, 300000); // every 5 minutes (300000)
-
-
-
