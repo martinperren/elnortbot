@@ -21,8 +21,8 @@ return day;
 function horariosDeSfe(){
     var horarios = [];
     var resultado = [];
-    //dia = parseInt(dia());
-    dia = 6;
+    var dia = parseInt(dia());
+    
     
     switch(dia) {
            case 1: //lunes
