@@ -158,7 +158,7 @@ bot.on('message', (msg) => {
  if (msg.text.toString().toLowerCase().indexOf("desfe") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSfe());
  }
- });
+ 
 
 if (msg.text.toString().toLowerCase().indexOf("descc") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSCC());
