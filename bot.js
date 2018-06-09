@@ -35,8 +35,7 @@ return day;
 function horariosDeSfe(){
     var horarios = [];
     var resultado = [];
-    var diaAux = dia();
-    dia = parseInt(diaAux);
+    dia = parseInt(dia());
     
     switch(dia) {
            case 1: //lunes
@@ -139,31 +138,30 @@ bot.on('message', (msg) => {
 
  if (msg.text.toString().toLowerCase().indexOf("dia") === 0) {
     
-     var diaAux = dia();
-    dia = parseInt(diaAux);
+    
+    diaAux = parseInt(dia());
      
-       switch(dia) {
+       switch(diaAux) {
            case 1: //lunes
-        bot.sendMessage(msg.chat.id, "Hoy es Lunes" + msg.from.first_name+"!");
+        bot.sendMessage(msg.chat.id, "Hoy es Lunes :(" + msg.from.first_name+"!");
         break;
             case 2: //martes
-        bot.sendMessage(msg.chat.id, "Hoy es Martes " + msg.from.first_name+"!");
+        bot.sendMessage(msg.chat.id, "Hoy es Martes :/" + msg.from.first_name+"!");
         break;
             case 3: //miercoles
-        bot.sendMessage(msg.chat.id, "Hoy es Miercoles " + msg.from.first_name+"!");
+        bot.sendMessage(msg.chat.id, "Hoy es Miercoles :|" + msg.from.first_name+"!");
         break;
             case 4: //jueves
-       bot.sendMessage(msg.chat.id, "Hoy es Jueves " + msg.from.first_name+"!");
+       bot.sendMessage(msg.chat.id, "Hoy es Jueves :)" + msg.from.first_name+"!");
         break;
             case 5: //viernes
-       bot.sendMessage(msg.chat.id, "Hoy es Viernes " + msg.from.first_name+"!");
+       bot.sendMessage(msg.chat.id, "Hoy es Viernes >:D" + msg.from.first_name+"!");
         break;
-            case 6: //sabado
-               bot.sendMessage(msg.chat.id,"xd");
-        bot.sendMessage(msg.chat.id, "Hoy es Sábado " + msg.from.first_name+"!");
+            case 6: //sabado            
+        bot.sendMessage(msg.chat.id, "Hoy es Sábado :D" + msg.from.first_name+"!");
         break;
             case 7: //domingo
-        bot.sendMessage(msg.chat.id, "Hoy es Domingo " + msg.from.first_name+"!");
+        bot.sendMessage(msg.chat.id, "Hoy es Domingo D:" + msg.from.first_name+"!");
         break;
             
             
