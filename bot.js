@@ -5,7 +5,7 @@ const figlet = require('figlet');
 
 
 
-var lunvierdesfe = ["00:00","06:45","10:10","12:00","13:00", "14:00","15:50","18:00","19:15","21:05","22:30"];
+
 
 
 
@@ -24,13 +24,66 @@ return hour + ":" + min;
 }
 
 
-function horarios(){
+function dia(){
+    var date = new Date();
+     var dia = date.getDay()
+return dia;
+
+}
+
+
+function horariosDeSfe(){
+    var proximos = [];
+  var dia = dia();
+    
+    switch(dia) {
+           case 1: //lunes
+        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+            horariosDeSfeAux(horarios);
+        break;
+            case 2: //martes
+        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+             horariosDeSfeAux(horarios);
+        break;
+            case 3: //miercoles
+        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+             horariosDeSfeAux(horarios);
+        break;
+            case 4: //jueves
+       var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+             horariosDeSfeAux(horarios);
+        break;
+            case 5: //viernes
+        var  horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
+             horariosDeSfeAux(horarios);
+        break;
+            case 6: //sabado
+        var  horarios  = ["05:30","10:10","12:00","14:00","18:00","19:15","22:30"];
+             horariosDeSfeAux(horarios);
+        break;
+            case 7: //domingo
+        var  horarios  = ["08:30","10:10","13:30","17:15","20:30","22:30","23:45"];
+             horariosDeSfeAux(horarios);
+        break;
+     
+}
+        
+    return proximos; 
+   
+}
+
+
+
+
+
+function horariosDeSfeAux(array){
+    
     var proximos = [];
     var i;
-    tam = lunvierdesfe.length;
+    tam = array.length;
 for (i = 0; i < tam; i++) {
-    if(lunvierdesfe[i]>hora()){
-        proximos.push(lunvierdesfe[i]);   
+    if(array[i]>hora()){
+        proximos.push(array[i]);   
        
     }
 }
@@ -73,8 +126,8 @@ if (!TELEGRAM_BOT_TOKEN) {
 
 bot.on('message', (msg) => {
 
- if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas: " + horarios());
+ if (msg.text.toString().toLowerCase().indexOf("desfe") === 0) {
+     bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSfe());
  }
  });
 
