@@ -2,13 +2,6 @@ const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 const figlet = require('figlet');
-
-
-
-
-
-
-
 function hora(){
     var date = new Date();
     
@@ -18,20 +11,13 @@ function hora(){
      hour = (hour < 10 ? "0" : "") + hour;
 var min  = date.getMinutes();
    min = (min < 10 ? "0" : "") + min;
-
 return hour + ":" + min;
-
 }
-
-
 function dia(){
     var date = new Date();
      var day = date.getDay()
 return day;
-
 }
-
-
 function horariosDeSfe(){
     var horarios = [];
     var resultado = [];
@@ -74,11 +60,6 @@ function horariosDeSfe(){
     return resultado; 
    
 }
-
-
-
-
-
 function horariosDeSfeAux(array){
     
     var proximos = [];
@@ -93,50 +74,33 @@ for (i = 0; i < tam; i++) {
     return proximos; 
    
 }
-
-
-
-
-
 if (!TELEGRAM_BOT_TOKEN) {
   console.error('Seems like you forgot to pass Telegram Bot Token. I can not proceed...');
   process.exit(1);
 }
-
-
-
- bot.on('message', (msg) => {
-
- if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
+bot.on('message', (msg) => {
+ 
+    
+     if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
      bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
  }
- });
-
- bot.on('message', (msg) => {
-
- if (msg.text.toString().toLowerCase().indexOf("chau") === 0) {
+    
+    
+    if (msg.text.toString().toLowerCase().indexOf("chau") === 0) {
      bot.sendMessage(msg.chat.id, "Nos re vimos!");
  }
- });
-
-
- bot.on('message', (msg) => {
- if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
+ 
+    
+    
+    if (msg.text.toString().toLowerCase().indexOf("hora") === 0) {
      bot.sendMessage(msg.chat.id, "Hora actual: " +hora());
  }
- });
-
-
-bot.on('message', (msg) => {
-
+    
+    
  if (msg.text.toString().toLowerCase().indexOf("desfe") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas: " +horariosDeSfe());
  }
  });
-
-
-
-
 var http = require("http");
 setInterval(function() {
     http.get("http://elnortebot.herokuapp.com");
