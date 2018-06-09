@@ -138,7 +138,40 @@ bot.on('message', (msg) => {
 bot.on('message', (msg) => {
 
  if (msg.text.toString().toLowerCase().indexOf("dia") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas: " +dia());
+    
+     var dia = dia();
+     
+       switch(dia) {
+           case 1: //lunes
+        bot.sendMessage(msg.chat.id, "Hoy es Lunes" + msg.from.first_name+"!");
+        break;
+            case 2: //martes
+        bot.sendMessage(msg.chat.id, "Hoy es Martes " + msg.from.first_name+"!");
+        break;
+            case 3: //miercoles
+        bot.sendMessage(msg.chat.id, "Hoy es Miercoles " + msg.from.first_name+"!");
+        break;
+            case 4: //jueves
+       bot.sendMessage(msg.chat.id, "Hoy es Jueves " + msg.from.first_name+"!");
+        break;
+            case 5: //viernes
+       bot.sendMessage(msg.chat.id, "Hoy es Viernes " + msg.from.first_name+"!");
+        break;
+            case 6: //sabado
+        bot.sendMessage(msg.chat.id, "Hoy es Sábado " + msg.from.first_name+"!");
+        break;
+            case 7: //domingo
+        bot.sendMessage(msg.chat.id, "Hoy es Domingo  + msg.from.first_name+"!"");
+        break;
+            
+            
+     
+}
+     
+     
+     
+     
+     
  }
  });
 
