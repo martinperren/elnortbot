@@ -133,7 +133,7 @@ for (i = 0; i < tam; i++) {
     }
 }
     
-    if(proximos==[]){
+    if(proximos.length == 0){
         return "No hay proximas salidas para hoy.";
         
     }else{
