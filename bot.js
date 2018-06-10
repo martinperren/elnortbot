@@ -98,7 +98,7 @@ function horariosDeSCC(){
         horarios  = ["07:30","09:00","12:33","14:23","15:55","19:45","21:18"];
             return horariosAux(horarios);
         break;
-            case 7: //domingo
+            case 0: //domingo
         horarios  = ["06:45","11:00","15:15","19:00","20:50","22:30"];
              return horariosAux(horarios);
         break;
