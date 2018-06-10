@@ -101,7 +101,7 @@ function horariosDeSCC(){
             return horariosAux(horarios);
         break;
             case 0: //domingo
-        horarios  = [];
+        horarios  = []; //"06:45","11:00","15:15","19:00","20:50","22:30"
              return horariosAux(horarios);
         break;
             
@@ -133,7 +133,7 @@ for (i = 0; i < tam; i++) {
     }
 }
     
-    if(proximos=[]){
+    if(proximos==[]){
         return "No hay proximas salidas para hoy.";
         
     }else{
