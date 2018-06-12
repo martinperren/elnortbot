@@ -150,6 +150,12 @@ bot.on('message', (msg) => {
      bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
  }
     
+    if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
+     bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
+ }
+    
+   
+    
     
     if (msg.text.toString().toLowerCase().indexOf("chau") === 0) {
      bot.sendMessage(msg.chat.id, "Nos re vimos!");
