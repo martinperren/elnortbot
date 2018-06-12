@@ -169,12 +169,12 @@ bot.on('message', async (msg) => {
     
     
  if (msg.text.toString().toLowerCase().indexOf("/desfe") === 0) {
-    await bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe());
+     bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe());
  }
  
 
 if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
-    await bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
+     bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
  }
  });
 
