@@ -147,7 +147,7 @@ bot.on('message', async (msg) => {
  
     
      if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
-     bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
+    bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
  }
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
@@ -169,12 +169,12 @@ bot.on('message', async (msg) => {
     
     
  if (msg.text.toString().toLowerCase().indexOf("/desfe") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe());
+    await bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe());
  }
  
 
 if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
+    await bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
  }
  });
 
