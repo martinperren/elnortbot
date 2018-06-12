@@ -143,7 +143,7 @@ for (i = 0; i < tam; i++) {
 
 
 
-bot.on('message', (msg) => {
+bot.on('message', async (msg) => {
  
     
      if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
