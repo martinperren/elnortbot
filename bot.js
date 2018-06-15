@@ -186,19 +186,6 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
 
 
 
-bot.on('message', (msg) => {
-  if (msg.text.toString() === trigger) {
-    return request(url, (err, resp, body) => {
-      bot.sendMessage(msg.chat.id, prepareData(body));
-    });
-  }
-  bot.sendMessage(msg.chat.id, 'Hi, do you want to travel?', {
-    reply_markup: {
-       keyboard: [[trigger], ['Bulk option']]
-    }
- });
-});
-
 
 var http = require("http");
 setInterval(function() {
