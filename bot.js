@@ -176,6 +176,18 @@ bot.on('message', async (msg) => {
 if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
  }
+    
+    
+ if (msg.text.toString().toLowerCase().indexOf("/horarios") === 0) {
+     bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
+     reply_markup: {
+      keyboard: [["SFE"], ["SCC"]]
+    }
+ }   
+    
+    
+    
+    
  });
 
 
