@@ -143,7 +143,7 @@ for (i = 0; i < tam; i++) {
 
 
 
-bot.on('message', async (msg) => {
+bot.on('message', (msg) => {
  
     
      if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
@@ -177,17 +177,27 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC());
  }
     
-    
- if (msg.text.toString().toLowerCase().indexOf("/horarios") === 0) {
-     reply_markup: {
-      keyboard: [['SFE'], ['SCC']]
-    }
- }   
+   
     
     
     
     
  });
+
+
+
+bot.on('message', (msg) => {
+  if (msg.text.toString() === trigger) {
+    return request(url, (err, resp, body) => {
+      bot.sendMessage(msg.chat.id, prepareData(body));
+    });
+  }
+  bot.sendMessage(msg.chat.id, 'Hi, do you want to travel?', {
+    reply_markup: {
+       keyboard: [[trigger], ['Bulk option']]
+    }
+ });
+});
 
 
 var http = require("http");
