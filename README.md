@@ -1,3 +1,3 @@
 # elnortbot
 
-la wea
+la wea quantica
