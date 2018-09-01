@@ -28,7 +28,7 @@ function horariosDeSfe(){
    
     
     
-    switch(int dia) {
+    switch(parseInt(dia()))) {
            case 1: //lunes
         horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","19:15","21:05","22:30"];
             return horariosAux(horarios);
@@ -69,13 +69,13 @@ function horariosDeSfe(){
 
 
 
-function horariosDeSCC(int dia){
+function horariosDeSCC(){
     var horarios = [];
     var resultado = [];
    
     
     
-    switch(dia) {
+    switch(parseInt(dia()))) {
            case 1: //lunes
         horarios  = ["05:35","06:13","07:30","09:00","12:33","14:23","15:05","15:55","17:40","19:45","21:18"];
             return horariosAux(horarios);
@@ -169,12 +169,12 @@ bot.on('message', (msg) => {
     
     
  if (msg.text.toString().toLowerCase().indexOf("/desfe") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe(parseInt(dia())));
+     bot.sendMessage(msg.chat.id, "Proximas salidas desde SANTA FE: " +horariosDeSfe();
  }
  
 
 if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
-     bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC(parseInt(dia())));
+     bot.sendMessage(msg.chat.id, "Proximas salidas desde SCC: " +horariosDeSCC();
  }
     
       if (msg.text.toString().toLowerCase().indexOf("/lunes") === 0) {
