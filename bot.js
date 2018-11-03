@@ -192,7 +192,7 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
   //HORARIOS DESDE SFE   
     
      if (msg.text.toString().toLowerCase().indexOf("/lunessf") === 0) {
-     bot.sendMessage(msg.chat.id, "Lunes: SFE -> SCC:\n     05:30\n     06:45\n     10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "Lunes\n SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/martessf") === 0) {
      bot.sendMessage(msg.chat.id, "Martes: SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
