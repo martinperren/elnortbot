@@ -192,50 +192,50 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
   //HORARIOS DESDE SFE   
     
      if (msg.text.toString().toLowerCase().indexOf("/lunessf") === 0) {
-     bot.sendMessage(msg.chat.id, "LUNES\nSFE -> SCC\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "LUNES | SFE -> SCC\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/martessf") === 0) {
-     bot.sendMessage(msg.chat.id, "Martes\nSFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "MARTES | SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/miercolessf") === 0) {
-     bot.sendMessage(msg.chat.id, "Miércoles\nSFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "MIÉRCOLES | SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/juevessf") === 0) {
-     bot.sendMessage(msg.chat.id, "Jueves\nSFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "JUEVES | SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n19:15\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/viernessf") === 0) {
-     bot.sendMessage(msg.chat.id, "Viernes\nSFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n18:45\n19:45\n21:05\n22:30");
+     bot.sendMessage(msg.chat.id, "VIERNES | SFE -> SCC:\n05:30\n06:45\n10:10\n12:00\n13:00\n14:00\n15:50\n18:00\n18:45\n19:45\n21:05\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabadosf") === 0) {
-     bot.sendMessage(msg.chat.id, "Sábado\nSFE -> SCC:\n05:30\n10:10\n12:00\n14:00\n18:00\n19:15\n22:30");
+     bot.sendMessage(msg.chat.id, "SÁBADO | SFE -> SCC:\n05:30\n10:10\n12:00\n14:00\n18:00\n19:15\n22:30");
  }
     if (msg.text.toString().toLowerCase().indexOf("/domingosf") === 0) {
-     bot.sendMessage(msg.chat.id, "Domingo\nSFE -> SCC:\n08:30\n10:10\n13:30\n17:15\n20:30\n22:30\n23:45");
+     bot.sendMessage(msg.chat.id, "DOMINGO | SFE -> SCC:\n08:30\n10:10\n13:30\n17:15\n20:30\n22:30\n23:45");
  }
     
     
      //HORARIOS DESDE SCC
     
          if (msg.text.toString().toLowerCase().indexOf("/lunesscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Lunes\nSCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "LUNES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/martesscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Martes\nSCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "MARTES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/miercolesscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Miércoles\nSCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "MIÉRCOLES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/juevesscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Jueves\nSCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "JUEVES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/viernesscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Viernes\nSCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18\n22:45");
+     bot.sendMessage(msg.chat.id, "VIERNES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18\n22:45");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabadoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Sábado\nSCC -> SFE:\n07:30\n09:00\n12:33\n4:23\n15:55\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "SÁBADO | SCC -> SFE:\n07:30\n09:00\n12:33\n4:23\n15:55\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/domingoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Domingo\nSCC -> SFE:\n06:45\n11:00\n15:15\n19:00\n20:50\n22:30");
+     bot.sendMessage(msg.chat.id, "DOMINGO | SCC -> SFE:\n06:45\n11:00\n15:15\n19:00\n20:50\n22:30");
  }
     
     
