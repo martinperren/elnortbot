@@ -46,7 +46,7 @@ function horariosDeSfe(){
              return horariosAux(horarios);
         break;
             case 5: //viernes
-       horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","18:45,"19:45","21:05","22:30"];
+       horarios  = ["05:30","06:45","10:10","12:00","13:00","14:00","15:50","18:00","18:45","19:45","21:05","22:30"];
              return horariosAux(horarios);
         break;
             case 6: //sabado
