@@ -183,11 +183,11 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
  }
     
      if (msg.text.toString().toLowerCase().indexOf("/santafe") === 0) {
-     bot.sendMessage(msg.chat.id, "Seleccione el día: /lunesSF \n /martesSF \n /miercolesSF \n /juevesSF \n /viernesSF \n /sabadoSF \n /domingoSF");
+     bot.sendMessage(msg.chat.id, "Seleccione un día\n /lunesSF \n /martesSF \n /miercolesSF \n /juevesSF \n /viernesSF \n /sabadoSF \n /domingoSF");
  }
    
      if (msg.text.toString().toLowerCase().indexOf("/lunesSF") === 0) {
-     bot.sendMessage(msg.chat.id, "Lunes: SFE -> SCC: 05:30,06:45,10:10,12:00,13:00,14:00,15:50,18:00,19:15,21:05,22:30");
+     bot.sendMessage(msg.chat.id, "xd");
  }
     
     
