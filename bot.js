@@ -179,7 +179,7 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
     
     
      if (msg.text.toString().toLowerCase().indexOf("/horarios") === 0) {
-     bot.sendMessage(msg.chat.id, "Seleccione el origen /santafe ó /scc");
+     bot.sendMessage(msg.chat.id, "Seleccione el origen /santafe o /scc");
  }
     
      if (msg.text.toString().toLowerCase().indexOf("/santafe") === 0) {
