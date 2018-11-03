@@ -217,19 +217,19 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      //HORARIOS DESDE SCC
     
          if (msg.text.toString().toLowerCase().indexOf("/lunes-scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Lunes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18);
+     bot.sendMessage(msg.chat.id, "Lunes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/martes-scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Martes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18);
+     bot.sendMessage(msg.chat.id, "Martes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/miercoles-scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Miércoles: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18);
+     bot.sendMessage(msg.chat.id, "Miércoles: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/jueves-scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Jueves: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18);
+     bot.sendMessage(msg.chat.id, "Jueves: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/viernes-scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Viernes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18,22:45);
+     bot.sendMessage(msg.chat.id, "Viernes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18,22:45");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabado-scc") === 0) {
      bot.sendMessage(msg.chat.id, "Sábado: SCC -> SFE: 05:30,10:10,12:00,14:00,18:00,19:15,22:30");
