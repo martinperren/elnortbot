@@ -186,7 +186,7 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "Seleccione un día\n Lunes: /LunesSF \n Martes: /MartesSF \n Miércoles: /MiercolesSF \n Jueves: /JuevesSF \n Viernes: /ViernesSF \n Sábado: /SabadoSF \n Domingo: /DomingoSF");
  }
     if (msg.text.toString().toLowerCase().indexOf("/scc") === 0) {
-     bot.sendMessage(msg.chat.id, "Seleccione un día\n Lunes: /LunesSCC \n Martes: /MartesSCC \n Miércoles: MiercolesSCC \n Jueves: /JuevesSCC \n Viernes: /ViernesSCC \n Sábado: /SabadoSCC \n Domingo: /DomingoSCC");
+     bot.sendMessage(msg.chat.id, "Seleccione un día\n Lunes: /LunesSCC \n Martes: /MartesSCC \n Miércoles: /MiercolesSCC \n Jueves: /JuevesSCC \n Viernes: /ViernesSCC \n Sábado: /SabadoSCC \n Domingo: /DomingoSCC");
  }
    
   //HORARIOS DESDE SFE   
@@ -232,10 +232,10 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "Viernes: SCC -> SFE: 05:35,06:13,07:30,09:00,12:33,14:23,15:05,15:55,17:40,19:45,21:18,22:45");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabadoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Sábado: SCC -> SFE: 05:30,10:10,12:00,14:00,18:00,19:15,22:30");
+     bot.sendMessage(msg.chat.id, "Sábado: SCC -> SFE: 07:30,09:00,12:33,14:23,15:55,19:45,21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/domingoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "Domingo: SCC -> SFE: 08:30,10:10,13:30,17:15,20:30,22:30,23:45");
+     bot.sendMessage(msg.chat.id, "Domingo: SCC -> SFE: 06:45,11:00,15:15,19:00,20:50,22:30");
  }
     
     
