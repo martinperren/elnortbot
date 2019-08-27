@@ -151,6 +151,11 @@ bot.on('message', (msg) => {
  }
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
+		
+		var jssoup = require('jssoup');
+		var soup = new JSSoup('https://ecommerce.centraldepasajes.com.ar/empresa.aspx?tviaje=rIda&textfield=Santa%20Fe%20Terminal%20(Santa%20Fe)%20(ARG)&IdOrigen=1396&textfield=San%20Carlos%20Centro%20(Santa%20Fe)%20(ARG)&IdDestino=25758&FechaIda=28-08-2019');
+		console.log(soup.findAll('fh'));
+		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
  }
     
