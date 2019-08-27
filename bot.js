@@ -268,7 +268,7 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "VIERNES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18\n22:45");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabadoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "SÁBADO | SCC -> SFE:\n07:30\n09:00\n12:33\n14:23\n15:55\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "SÁBADO | SCC -> SFE:\n07:30\n09:00\n12:33\n4:23\n15:55\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/domingoscc") === 0) {
      bot.sendMessage(msg.chat.id, "DOMINGO | SCC -> SFE:\n06:45\n11:00\n15:15\n19:00\n20:50\n22:30");
