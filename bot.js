@@ -1,7 +1,35 @@
 const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
+const getURL = year => `https://nolaborables.com.ar/api/v2/feriados/${year}`
+const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado']
+const dayOfWeek = (day, month, year) => days[new Date(year, month, day).getDay()]
 
+
+
+
+ setNext(holidays) {
+    const now = new Date()
+    const today = {
+      day: now.getDate(),
+      month: now.getMonth() + 1
+    };
+
+    let holiday = holidays.find(h => 
+      h.mes === today.month && h.dia == today.day
+    );
+
+
+return "Feriado";
+
+    if (!holiday){
+      holiday = 0;
+	  return "No feriado";
+    }
+    
+  }
+  
+  
 
 
 function hora(){
