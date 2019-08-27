@@ -180,6 +180,11 @@ bot.on('message', (msg) => {
     }
     
   }
+  
+  
+  componentDidMount() {
+    axios.get(getURL(this.state.year)).then(({data}) => this.setNext(data))
+  }
 		
 		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
