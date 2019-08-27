@@ -1,20 +1,12 @@
 const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
-const getURL = year => `https://nolaborables.com.ar/api/v2/feriados/${year}`
-const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado']
-const dayOfWeek = (day, month, year) => days[new Date(year, month, day).getDay()]
 
-
-
-
- 
-  
-  
 
 
 function hora(){
     var date = new Date();
+    
  var hour = date.getHours();
    hour = parseInt(hour);
      hour = hour -3;	  
@@ -159,34 +151,6 @@ bot.on('message', (msg) => {
  }
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
-		
-		setNext(holidays){
-    const now = new Date()
-    const today = {
-      day: now.getDate(),
-      month: now.getMonth() + 1
-    };
-
-    let holiday = holidays.find(h => 
-      h.mes === today.month && h.dia == today.day
-    );
-
-
- bot.sendMessage(msg.chat.id, "feriado");
-
-    if (!holiday){
-      holiday = 0;
-	   bot.sendMessage(msg.chat.id, "NO FERIADO");
-    }
-    
-  }
-  
-  
-  componentDidMount() {
-    axios.get(getURL(this.state.year)).then(({data}) => this.setNext(data))
-  }
-		
-		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
  }
     
@@ -268,7 +232,7 @@ if (msg.text.toString().toLowerCase().indexOf("/descc") === 0) {
      bot.sendMessage(msg.chat.id, "VIERNES | SCC -> SFE:\n05:35\n06:13\n07:30\n09:00\n12:33\n14:23\n15:05\n15:55\n17:40\n19:45\n21:18\n22:45");
  }
     if (msg.text.toString().toLowerCase().indexOf("/sabadoscc") === 0) {
-     bot.sendMessage(msg.chat.id, "SÁBADO | SCC -> SFE:\n07:30\n09:00\n12:33\n4:23\n15:55\n19:45\n21:18");
+     bot.sendMessage(msg.chat.id, "SÁBADO | SCC -> SFE:\n07:30\n09:00\n12:33\n14:23\n15:55\n19:45\n21:18");
  }
     if (msg.text.toString().toLowerCase().indexOf("/domingoscc") === 0) {
      bot.sendMessage(msg.chat.id, "DOMINGO | SCC -> SFE:\n06:45\n11:00\n15:15\n19:00\n20:50\n22:30");
