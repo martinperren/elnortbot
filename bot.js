@@ -11,11 +11,10 @@ const dayOfWeek = (day, month, year) => days[new Date(year, month, day).getDay()
  
   
   
-//
+
 
 function hora(){
     var date = new Date();
-    
  var hour = date.getHours();
    hour = parseInt(hour);
      hour = hour -3;	  
@@ -161,8 +160,7 @@ bot.on('message', (msg) => {
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
 		
-		
-		setNext(holidays) {
+		setNext(holidays){
     const now = new Date()
     const today = {
       day: now.getDate(),
