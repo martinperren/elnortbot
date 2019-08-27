@@ -8,26 +8,7 @@ const dayOfWeek = (day, month, year) => days[new Date(year, month, day).getDay()
 
 
 
- setNext(holidays) {
-    const now = new Date()
-    const today = {
-      day: now.getDate(),
-      month: now.getMonth() + 1
-    };
-
-    let holiday = holidays.find(h => 
-      h.mes === today.month && h.dia == today.day
-    );
-
-
-return "Feriado";
-
-    if (!holiday){
-      holiday = 0;
-	  return "No feriado";
-    }
-    
-  }
+ 
   
   
 
@@ -179,6 +160,30 @@ bot.on('message', (msg) => {
  }
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
+		
+		
+		setNext(holidays) {
+    const now = new Date()
+    const today = {
+      day: now.getDate(),
+      month: now.getMonth() + 1
+    };
+
+    let holiday = holidays.find(h => 
+      h.mes === today.month && h.dia == today.day
+    );
+
+
+ bot.sendMessage(msg.chat.id, "feriado");
+
+    if (!holiday){
+      holiday = 0;
+	   bot.sendMessage(msg.chat.id, "NO FERIADO");
+    }
+    
+  }
+		
+		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
  }
     
