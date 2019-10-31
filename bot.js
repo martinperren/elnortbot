@@ -12,7 +12,7 @@ function hora(){
      hour = (hour < 10 ? "0" : "") + hour;
 var min  = date.getMinutes();
    min = (min < 10 ? "0" : "") + min;
-return 21 + ":" + 39;
+return hour + ":" + min;
 }
 
 
