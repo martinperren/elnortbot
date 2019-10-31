@@ -6,7 +6,6 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 
 function hora(){
     var date = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
-aestTime = new Date(aestTime);
  var hour = date.getHours();
    hour = parseInt(hour);  
      hour = (hour < 10 ? "0" : "") + hour;
