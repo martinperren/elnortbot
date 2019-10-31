@@ -5,8 +5,7 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 
 
 function hora(){
-    var date2 = new Date().toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires"});
-	var date = new Date(date2);
+    var date = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
 aestTime = new Date(aestTime);
  var hour = date.getHours();
    hour = parseInt(hour);  
