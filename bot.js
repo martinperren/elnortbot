@@ -115,14 +115,6 @@ function horariosDeSCC(){
 }
 
 
-function say(array){
-   bot.sendMessage(msg.chat.id, array);
-}
-
-
-
-
-
 
 function horariosAux(array){
     
