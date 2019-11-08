@@ -14,6 +14,7 @@ var min  = date.getMinutes();
    min = (min < 10 ? "0" : "") + min;
 return hour + ":" + min;
 }
+//
 
 
 function dia(){
