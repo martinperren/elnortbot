@@ -1,3 +1,10 @@
+/**
+ * TelegramBot to inform bus times.
+ * @author Martin Perren.
+ * @since  1.0.2
+ */
+
+
 const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
