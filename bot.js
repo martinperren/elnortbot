@@ -1,11 +1,12 @@
 const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
-var date = new Date().toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires"});
+
 	
 
 
 function hora(){
+	var date = new Date().toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires"});
     date = new Date(date);
  var hour = date.getHours();
    hour = parseInt(hour);  
@@ -14,6 +15,7 @@ var min  = date.getMinutes();
    min = (min < 10 ? "0" : "") + min;
 return hour + ":" + min;
 }
+//
 
 
 function dia(){
