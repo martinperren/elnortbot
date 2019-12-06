@@ -169,8 +169,8 @@ bot.on('message', (msg) => {
 
   var list = [];
      let $ = cheerio.load(body);
-$('div[id="list"]').find('div > div > strong.fh').each(function (index, element) {
-  list.push($(element).attr('class'));
+$('div[id="list"]').find('div > div').each(function (index, element) {
+  list.push($(element).attr('fh'));
 });
 
 
