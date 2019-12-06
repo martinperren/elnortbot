@@ -165,12 +165,17 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
 
+
+
+  var list = [];
+     let $ = cheerio.load(body);
+	 
 $('tr td').each((i, elem) => { //<------ $ is cheerio object
   let str = elem.innerHTML;
   console.log(str);    //<---------- undefined
- 
   
 });
+
 
 });
 
