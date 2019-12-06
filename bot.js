@@ -165,7 +165,9 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
   var list = [];
-$('div[id="list"]').find('div > div').each(function (index, element) {
+$('#table-id > tbody > tr > td.data').toArray().map(item => {
+  console.log($(item).text());
+
   list.push($(element).attr('fh'));
 });
 console.dir(list);
