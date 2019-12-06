@@ -171,12 +171,11 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	 
-console.log(
-  $('fh').map(
-    (index, element) => element.title
-  ).get()
-)
 
+
+$(".ListView1_ctrl2_ctl00_lblSalida fh").each(() => {
+    console.log($(this).val());
+});
 
 
 });
