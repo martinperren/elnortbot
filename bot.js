@@ -164,11 +164,11 @@ bot.on('message', (msg) => {
 
     if (err) return console.error(err);
 
-    let $ = cheerio.load(body);
-
-    let title = $('title');
-
-    console.log(title.text());
+  var list = [];
+$('div[id="list"]').find('div > div > td ').each(function (index, element) {
+  list.push($(element).attr('fh'));
+});
+console.dir(list);
 });
 
 		
