@@ -172,7 +172,7 @@ bot.on('message', (msg) => {
 	 
 	 
 console.log(
-  $('.fh').map(
+  $('fh').map(
     (index, element) => element.title
   ).get()
 )
