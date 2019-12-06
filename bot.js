@@ -170,10 +170,10 @@ bot.on('message', (msg) => {
   var list = [];
      let $ = cheerio.load(body);
 	 
-	 $('#row list odd').find('grillaservicios_ctl02_lblSalida').length
+	
 
 	 
-console.log($('<strong class="fh">13:40</strong>').data());
+console.log( $('#row list odd').find('grillaservicios_ctl02_lblSalida').length);
 
 
 
