@@ -170,8 +170,8 @@ bot.on('message', (msg) => {
   var list = [];
      let $ = cheerio.load(body);
 let title = $('span#grillaservicios_ctl02_lblSalida-title').text();
-  console.log('The title of the video %s is %s', title);
-})
+  console.log('The title of the video is %s', title);
+
 
 });
 
