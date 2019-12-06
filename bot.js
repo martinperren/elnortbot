@@ -170,11 +170,9 @@ bot.on('message', (msg) => {
   var list = [];
      let $ = cheerio.load(body);
 	 
-$('tr td').each((i, elem) => { //<------ $ is cheerio object
-  let str = elem.innerHTML;
-  console.log(str);    //<---------- undefined
-  
-});
+console.log($('<strong class="fh">13:40</strong>').data());
+
+
 
 
 });
