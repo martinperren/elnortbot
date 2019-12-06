@@ -171,8 +171,8 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	
-$('.grillaservicios_ctl02_lblSalida').find('fh').each((i,op) => {
-   console.log($(op).text())
+
+   console.log($('span#grillaservicios_ctl02_lblSalida').innerText);
 })
 
 });
