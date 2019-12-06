@@ -166,13 +166,9 @@ bot.on('message', (msg) => {
 
     let $ = cheerio.load(body);
 
-    let hobbies = [];
+    let title = $('title');
 
-    $(".info").each(function(i, item){
-    console.log($("strong fh", item).text())
-});
-
-    console.log(hobbies);
+    console.log(title.text());
 });
 
 		
