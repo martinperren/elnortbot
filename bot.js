@@ -172,11 +172,10 @@ bot.on('message', (msg) => {
 	 
 	 
 
-
-$(".ListView1_ctrl2_ctl00_lblSalida fh").each(() => {
-    console.log($(this).val());
-});
-
+const $ = require('cheerio')
+$('.grillaservicios_ctl02_lblSalida').find('fh').each((i,op) => {
+   console.log($(op).text())
+})
 
 });
 
