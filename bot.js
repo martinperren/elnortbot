@@ -168,7 +168,7 @@ bot.on('message', (msg) => {
 
     let hobbies = [];
 
-    $('fh').each(function (i, e) {
+    $('top').each(function (i, e) {
         hobbies[i] = $(this).text();
     });
 
