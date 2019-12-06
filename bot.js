@@ -169,14 +169,16 @@ bot.on('message', (msg) => {
 
   var list = [];
      let $ = cheerio.load(body);
-$('div[id="list"]').find('div > div').each(function (index, element) {
-  list.push($(element).attr('fh'));
-});
+	 
+	 
+console.log(
+  $('.fh').map(
+    (index, element) => element.title
+  ).get()
+)
 
 
 
-
-console.dir(list);
 });
 
 
