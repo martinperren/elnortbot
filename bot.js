@@ -165,13 +165,12 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
 
-
-
-  var list = [];
-     let $ = cheerio.load(body);
-let title = $('class#fh').text();
-  console.log('The title of the video is %s', title);
-
+$('tr td').each((i, elem) => { //<------ $ is cheerio object
+  let str = elem.innerHTML;
+  console.log(str);    //<---------- undefined
+ 
+  
+});
 
 });
 
