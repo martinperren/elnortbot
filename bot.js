@@ -165,10 +165,8 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
   var list = [];
-$('#table-id > tbody > tr > td.data').toArray().map(item => {
-  console.log($(item).text());
-
-  list.push($(element).attr('fh'));
+$('div[id="list"]').find('div > div > fh').each(function (index, element) {
+  list.push($(element).attr('class'));
 });
 console.dir(list);
 });
