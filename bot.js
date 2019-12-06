@@ -8,6 +8,8 @@
 const TelegramBot = require('node-telegram-bot-api');
 const { TELEGRAM_BOT_TOKEN } = process.env;
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
+const cheerio = require('cheerio');
+const request = require('request');
 
 	
 
@@ -155,7 +157,23 @@ bot.on('message', (msg) => {
  }
     
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
-		
+		request({
+    method: 'GET',
+    url: 'https://nuevachevallier.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=1&FechaIda=20-12-2019&Token=rZvGIQnx7OcreHC53Jiul9SxnvejVj%252fO'
+}, (err, res, body) => {
+
+    if (err) return console.error(err);
+
+    let $ = cheerio.load(body);
+
+    let hobbies = [];
+
+    $('fh').each(function (i, e) {
+        hobbies[i] = $(this).text();
+    });
+
+    console.log(hobbies);
+});
 
 		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
