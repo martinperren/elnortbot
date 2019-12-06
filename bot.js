@@ -165,7 +165,7 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
   var list = [];
-$('div[id="list"]').find('div > div > td ').each(function (index, element) {
+$('div[id="list"]').find('div > div').each(function (index, element) {
   list.push($(element).attr('fh'));
 });
 console.dir(list);
