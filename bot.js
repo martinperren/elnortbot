@@ -164,13 +164,21 @@ bot.on('message', (msg) => {
 
     if (err) return console.error(err);
 
+
+
+
   var list = [];
-    const $ = cheerio.load(url);
+     let $ = cheerio.load(body);
 $('div[id="list"]').find('div > div > fh').each(function (index, element) {
   list.push($(element).attr('class'));
 });
+
+
+
+
 console.dir(list);
 });
+
 
 		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
