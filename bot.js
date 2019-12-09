@@ -169,10 +169,9 @@ bot.on('message', (msg) => {
 	 
 	
 var list = [];
-let tds2 = $('main > form1 > pc > grillaservicios_wrapper > table dataTable no-footer > tbody > row list odd > show > grillaservicios_ctl02_lblSalida').map(function () {
-  return dom(this).text().trim();
-}).get();
-console.dir(tds2);
+let test = $('main > form1 > pc > grillaservicios_wrapper > table dataTable no-footer > tbody > row list odd > show > grillaservicios_ctl02_lblSalida');
+console.log(test.innerHTML)
+
      
 });
 
