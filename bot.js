@@ -167,9 +167,9 @@ bot.on('message', (msg) => {
   var list = [];
      let $ = cheerio.load(body);
 	 
-	  $('div._1HmYoV > div.col-10-12>div.bhgxx2>div._3O0U0u').each(function(index){
+	  $('div.table > div.ListView1_ctrl0_ctl00_divListRow').each(function(index){
 
-            const name = $(this).find('div.ListView1_ctrl0_ctl00_divListRow>div.show>span.ListView1_ctrl0_ctl00_lblSalida>strong.fh').text();
+            const name = $(this).find('div.show>span.ListView1_ctrl0_ctl00_lblSalida>strong.fh').text();
             console.log(name);   
 			
 			bot.sendMessage(msg.chat.id, name);
