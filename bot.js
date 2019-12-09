@@ -159,7 +159,7 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
 		request({
     method: 'GET',
-    url: 'https://nuevachevallier.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=1&FechaIda=20-12-2019&Token=rZvGIQnx7OcreHC53Jiul9SxnvejVj%252fO'
+    url: 'https://ecommerce.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=25758&FechaIda=20-12-2019&Token=ECgknrzqgIUC2hzgHeNvOlbuGPDBF2%2BO'
 }, (err, res, body) => {
 
     if (err) return console.error(err);
@@ -168,11 +168,11 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	
-
-            const name = $(this).find('span.lblMensaje').text();
-            console.log(name);   
-			
-			bot.sendMessage(msg.chat.id, name);
+var list = [];
+let tds2 = dom('main > form1 > mobile > ListView1_ctrl0_ctl00_divListRow > show > ListView1_ctrl0_ctl00_lblSalida').map(function () {
+  return dom(this).text().trim();
+}).get();
+console.dir(list);
      
 });
 
