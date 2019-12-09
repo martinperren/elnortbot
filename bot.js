@@ -169,7 +169,7 @@ bot.on('message', (msg) => {
 	 
 	
 var list = [];
-let test = $('main > form1 > pc > grillaservicios_wrapper > table dataTable no-footer > tbody > row list odd > show > grillaservicios_ctl02_lblSalida');
+let test = $('main > form1 ');
 console.log(test.innerHTML)
 
      
