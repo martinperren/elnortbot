@@ -169,7 +169,7 @@ bot.on('message', (msg) => {
 	 
 	
 var list = [];
-let tds2 = dom('main > form1 > mobile > ListView1_ctrl0_ctl00_divListRow > show > ListView1_ctrl0_ctl00_lblSalida').map(function () {
+let tds2 = $('main > form1 > mobile > ListView1_ctrl0_ctl00_divListRow > show > ListView1_ctrl0_ctl00_lblSalida').map(function () {
   return dom(this).text().trim();
 }).get();
 console.dir(list);
