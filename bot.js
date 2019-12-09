@@ -172,11 +172,10 @@ var list = [];
 let tds2 = $('main > form1 > mobile > ListView1_ctrl0_ctl00_divListRow > show > ListView1_ctrl0_ctl00_lblSalida').map(function () {
   return dom(this).text().trim();
 }).get();
-console.dir(list);
+console.dir(tds2);
      
 });
 
-console.log("asd");
 		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
  }
