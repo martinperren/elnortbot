@@ -169,7 +169,7 @@ bot.on('message', (msg) => {
 	 
 	
 var list = [];
-let test = $('main > form1 ');
+let test = $('main');
 console.log(test.innerHTML)
 
      
