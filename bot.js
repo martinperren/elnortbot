@@ -174,6 +174,7 @@ bot.on('message', (msg) => {
 
             const name = $(this).find('div.ListView1_ctrl0_ctl00_divListRow>div.show>span.ListView1_ctrl0_ctl00_lblSalida>strong.fh').text();
             console.log(name);   //name of smartphone
+			console.log("asd");
         });
 
 
