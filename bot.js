@@ -173,7 +173,7 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	
-const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong").text().trim();
+const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong").find("fh").text().trim();
 console.log(txt);
 
      
