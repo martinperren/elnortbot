@@ -127,6 +127,26 @@ function horariosDeSCC(){
 
 
 
+function scrap(){
+
+  
+     if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
+
+ 		request({
+    method: 'GET',
+    url: 'https://ecommerce.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=25758&FechaIda=20-12-2019&Token=ECgknrzqgIUC2hzgHeNvOlbuGPDBF2%2BO'
+}, (err, res, body) => {
+
+    if (err) return console.error(err);
+
+    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong")
+console.log(txt)
+	 
+
+
+}
+
+
 function horariosAux(array){
     
     var proximos = [];
@@ -151,29 +171,17 @@ for (i = 0; i < tam; i++) {
 
 bot.on('message', (msg) => {
  
-    
-     if (msg.text.toString().toLowerCase().indexOf("hola") === 0) {
-    bot.sendMessage(msg.chat.id, "Hola " + msg.from.first_name+"!");
- }
-    
-    if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
-		request({
-    method: 'GET',
-    url: 'https://ecommerce.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=25758&FechaIda=20-12-2019&Token=ECgknrzqgIUC2hzgHeNvOlbuGPDBF2%2BO'
-}, (err, res, body) => {
-
-    if (err) return console.error(err);
-
-  var list = [];
-     let $ = cheerio.load(body);
-	 
-	
-var list = [];
-let test = $('main');
-console.log(test.innerHTML)
+  scrap();
 
      
 });
+
+
+
+
+ }
+    
+    if (msg.text.toString().toLowerCase().indexOf("/web") === 0) {
 
 		
      bot.sendMessage(msg.chat.id, "www.elnortesa.com.ar");
