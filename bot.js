@@ -160,7 +160,7 @@ for (i = 0; i < tam; i++) {
 bot.on('message', (msg) => {
  
     
-     if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
+     if (msg.text.toString().toLowerCase().indexOf("/test") === 0) {
 
  		request({
     method: 'GET',
@@ -173,7 +173,7 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	
-const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong").find("fh").text().trim();
+const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong").text().replace(/\s\s+/g,'');
 console.log(txt);
 
      
