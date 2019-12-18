@@ -173,7 +173,7 @@ bot.on('message', (msg) => {
      let $ = cheerio.load(body);
 	 
 	
-const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong").text().replace(/\s\s+/g,'');
+const txt = $("#ListView1_ctrl0_ctl00_lblSalida").text().replace(/\s\s+/g,'');
 console.log(txt);
 
      
