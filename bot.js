@@ -129,23 +129,9 @@ function horariosDeSCC(){
 
 function scrap(){
 
-  
-     if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
-
- 		request({
-    method: 'GET',
-    url: 'https://ecommerce.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=25758&FechaIda=20-12-2019&Token=ECgknrzqgIUC2hzgHeNvOlbuGPDBF2%2BO'
-}, (err, res, body) => {
-
-    if (err) return console.error(err);
-}
-    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
-console.log(txt);
-	 
 
 
 
-}
 }
 
 
@@ -173,7 +159,19 @@ for (i = 0; i < tam; i++) {
 
 bot.on('message', (msg) => {
  
-  scrap();
+    
+     if (msg.text.toString().toLowerCase().indexOf("test") === 0) {
+
+ 		request({
+    method: 'GET',
+    url: 'https://ecommerce.centraldepasajes.com.ar/empresa.aspx?IdOrigen=1396&IdDestino=25758&FechaIda=20-12-2019&Token=ECgknrzqgIUC2hzgHeNvOlbuGPDBF2%2BO'
+}, (err, res, body) => {
+
+    if (err) return console.error(err);
+
+  var list = [];
+    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
+console.log(txt);
 
      
 });
