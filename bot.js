@@ -138,13 +138,13 @@ function scrap(){
 }, (err, res, body) => {
 
     if (err) return console.error(err);
-
+}
     const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
 console.log(txt);
 	 
 
 
-}
+
 }
 }
 
