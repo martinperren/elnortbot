@@ -170,7 +170,10 @@ bot.on('message', (msg) => {
     if (err) return console.error(err);
 
   var list = [];
-    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
+     let $ = cheerio.load(body);
+	 
+	
+const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
 console.log(txt);
 
      
