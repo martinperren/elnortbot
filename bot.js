@@ -145,6 +145,7 @@ console.log(txt);
 
 
 }
+}
 
 
 function horariosAux(array){
