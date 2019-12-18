@@ -139,8 +139,8 @@ function scrap(){
 
     if (err) return console.error(err);
 
-    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong")
-console.log(txt)
+    const txt = $("#ListView1_ctrl0_ctl00_lblSalida > strong");
+console.log(txt);
 	 
 
 
