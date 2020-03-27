@@ -1,7 +1,6 @@
 /**
  * TelegramBot to inform bus times.
  * @author Martin Perren.
- * @since  1.0.2
  */
 
 
